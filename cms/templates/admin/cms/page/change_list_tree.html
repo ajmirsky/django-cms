@@ -26,5 +26,15 @@
 	<ul class="tree-default">
 		{% for page in cl.get_items %}{% show_admin_menu page %}{% endfor %}
 	</ul>
+	<script>
+		$(function() {
+			$('.closed').click(function() { 
+				//alert('clicked!');
+				var attr = $(this).attr('class');
+$(this).children('ul').html("Loading");
+				alert('clicked');
+			});
+		});
+	</script>
 </div>
 </div>
